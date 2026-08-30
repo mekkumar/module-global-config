@@ -1,0 +1,25 @@
+{
+    "name": "kumar/module-global-config",
+    "description": "Magento 2 module for centralized global storefront configuration.",
+    "type": "magento2-module",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.1",
+        "magento/framework": "*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Kumar\\GlobalConfig\\": ""
+        }
+    },
+    "authors": [
+        {
+            "name": "Kunal Kumar"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

@@ -1,0 +1,509 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="kumar" translate="label" sortOrder="900">
+            <label>Kumar</label>
+        </tab>
+        <section id="kumar_globalconfig" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Global Config</label>
+            <tab>kumar</tab>
+            <resource>Magento_Config::config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>
+                <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="primary_color" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Primary Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="secondary_color" translate="label" type="text" sortOrder="12" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Secondary Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="text_color" translate="label" type="text" sortOrder="13" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Text Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="border_color" translate="label" type="text" sortOrder="14" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Border Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="page_background" translate="label" type="text" sortOrder="15" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Page Background</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+            </group>
+            <group id="typography" translate="label" type="text" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Typography</label>
+                <field id="body_font_family" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Body Font Family</label>
+                </field>
+                <field id="body_font_size" translate="label" type="text" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Body Font Size</label>
+                </field>
+                <field id="body_line_height" translate="label" type="text" sortOrder="12" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Body Line Height</label>
+                </field>
+                <field id="body_font_weight" translate="label" type="text" sortOrder="13" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Body Font Weight</label>
+                </field>
+                <field id="body_color" translate="label" type="text" sortOrder="14" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Body Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="heading_color" translate="label" type="text" sortOrder="15" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Heading Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="heading_font_weight" translate="label" type="text" sortOrder="16" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Heading Font Weight</label>
+                </field>
+            </group>
+            <group id="header" translate="label" type="text" sortOrder="12" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Header</label>
+                <field id="background_color" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Background Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="text_color" translate="label" type="text" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Text Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="link_color" translate="label" type="text" sortOrder="12" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Link Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="link_hover_color" translate="label" type="text" sortOrder="13" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Link Hover Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="border_color" translate="label" type="text" sortOrder="14" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Border Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="icon_color" translate="label" type="text" sortOrder="15" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Icon Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+            </group>
+            <group id="navigation" translate="label" type="text" sortOrder="13" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Navigation</label>
+                <field id="background_color" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Background Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="text_color" translate="label" type="text" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Text Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="hover_background" translate="label" type="text" sortOrder="12" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Hover Background</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="hover_text" translate="label" type="text" sortOrder="13" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Hover Text</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="active_text" translate="label" type="text" sortOrder="14" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Active Text</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="dropdown_background" translate="label" type="text" sortOrder="15" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Dropdown Background</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="dropdown_text" translate="label" type="text" sortOrder="16" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Dropdown Text</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+            </group>
+            <group id="footer" translate="label" type="text" sortOrder="14" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Footer</label>
+                <field id="background_color" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Background Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="text_color" translate="label" type="text" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Text Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="heading_color" translate="label" type="text" sortOrder="12" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Heading Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="link_color" translate="label" type="text" sortOrder="13" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Link Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="link_hover_color" translate="label" type="text" sortOrder="14" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Link Hover Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="border_color" translate="label" type="text" sortOrder="15" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Border Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+            </group>
+            <group id="buttons" translate="label" type="text" sortOrder="15" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Buttons</label>
+                <field id="primary_background" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Primary Background</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="primary_text" translate="label" type="text" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Primary Text</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="primary_hover_background" translate="label" type="text" sortOrder="12" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Primary Hover Background</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="primary_hover_text" translate="label" type="text" sortOrder="13" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Primary Hover Text</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="secondary_background" translate="label" type="text" sortOrder="14" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Secondary Background</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="secondary_text" translate="label" type="text" sortOrder="15" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Secondary Text</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="secondary_hover_background" translate="label" type="text" sortOrder="16" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Secondary Hover Background</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="secondary_hover_text" translate="label" type="text" sortOrder="17" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Secondary Hover Text</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="border_color" translate="label" type="text" sortOrder="18" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Border Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="border_radius" translate="label" type="text" sortOrder="19" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Border Radius</label>
+                </field>
+                <field id="height" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Height</label>
+                </field>
+                <field id="font_weight" translate="label" type="text" sortOrder="21" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Font Weight</label>
+                </field>
+            </group>
+            <group id="forms" translate="label" type="text" sortOrder="16" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Forms</label>
+                <field id="background" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Background</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="text_color" translate="label" type="text" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Text Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="border_color" translate="label" type="text" sortOrder="12" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Border Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="hover_border" translate="label" type="text" sortOrder="13" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Hover Border</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="focus_border" translate="label" type="text" sortOrder="14" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Focus Border</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="focus_shadow" translate="label" type="text" sortOrder="15" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Focus Shadow</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="placeholder_color" translate="label" type="text" sortOrder="16" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Placeholder Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="label_color" translate="label" type="text" sortOrder="17" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Label Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="error_border" translate="label" type="text" sortOrder="18" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Error Border</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="error_text" translate="label" type="text" sortOrder="19" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Error Text</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+            </group>
+            <group id="messages" translate="label" type="text" sortOrder="17" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Messages</label>
+                <field id="success_background" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Success Background</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="success_text" translate="label" type="text" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Success Text</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="error_background" translate="label" type="text" sortOrder="12" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Error Background</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="error_text" translate="label" type="text" sortOrder="13" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Error Text</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="warning_background" translate="label" type="text" sortOrder="14" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Warning Background</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="warning_text" translate="label" type="text" sortOrder="15" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Warning Text</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="notice_background" translate="label" type="text" sortOrder="16" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Notice Background</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="notice_text" translate="label" type="text" sortOrder="17" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Notice Text</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+            </group>
+            <group id="links" translate="label" type="text" sortOrder="18" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Links</label>
+                <field id="color" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="hover_color" translate="label" type="text" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Hover Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="visited_color" translate="label" type="text" sortOrder="12" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Visited Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="underline" translate="label" type="select" sortOrder="13" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Underline</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+            <group id="product" translate="label" type="text" sortOrder="19" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Product</label>
+                <field id="name_color" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Name Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="name_hover_color" translate="label" type="text" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Name Hover Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="card_background" translate="label" type="text" sortOrder="12" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Card Background</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="card_border" translate="label" type="text" sortOrder="13" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Card Border</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="card_hover_border" translate="label" type="text" sortOrder="14" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Card Hover Border</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="price_color" translate="label" type="text" sortOrder="15" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Price Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="special_price_color" translate="label" type="text" sortOrder="16" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Special Price Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="old_price_color" translate="label" type="text" sortOrder="17" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Old Price Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="rating_color" translate="label" type="text" sortOrder="18" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Rating Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="swatch_border" translate="label" type="text" sortOrder="19" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Swatch Border</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="selected_swatch_border" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Selected Swatch Border</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="sale_badge_background" translate="label" type="text" sortOrder="21" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Sale Badge Background</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="sale_badge_text" translate="label" type="text" sortOrder="22" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Sale Badge Text</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="new_badge_background" translate="label" type="text" sortOrder="23" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>New Badge Background</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="new_badge_text" translate="label" type="text" sortOrder="24" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>New Badge Text</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+            </group>
+            <group id="breadcrumbs" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Breadcrumbs</label>
+                <field id="background" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Background</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="text_color" translate="label" type="text" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Text Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="link_color" translate="label" type="text" sortOrder="12" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Link Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="hover_color" translate="label" type="text" sortOrder="13" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Hover Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="current_color" translate="label" type="text" sortOrder="14" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Current Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="separator_color" translate="label" type="text" sortOrder="15" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Separator Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+            </group>
+            <group id="pagination" translate="label" type="text" sortOrder="21" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Pagination</label>
+                <field id="text_color" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Text Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="background" translate="label" type="text" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Background</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="active_background" translate="label" type="text" sortOrder="12" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Active Background</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="active_text" translate="label" type="text" sortOrder="13" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Active Text</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="hover_background" translate="label" type="text" sortOrder="14" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Hover Background</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="hover_text" translate="label" type="text" sortOrder="15" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Hover Text</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="border_color" translate="label" type="text" sortOrder="16" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Border Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+            </group>
+            <group id="modal" translate="label" type="text" sortOrder="22" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Modal</label>
+                <field id="background" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Background</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="title_color" translate="label" type="text" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Title Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="text_color" translate="label" type="text" sortOrder="12" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Text Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="border_color" translate="label" type="text" sortOrder="13" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Border Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="close_icon_color" translate="label" type="text" sortOrder="14" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Close Icon Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="overlay_color" translate="label" type="text" sortOrder="15" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Overlay Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="border_radius" translate="label" type="text" sortOrder="16" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Border Radius</label>
+                </field>
+                <field id="width" translate="label" type="text" sortOrder="17" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Width</label>
+                </field>
+            </group>
+            <group id="loader" translate="label" type="text" sortOrder="23" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Loader</label>
+                <field id="overlay_color" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Overlay Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="loader_color" translate="label" type="text" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Loader Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="text_color" translate="label" type="text" sortOrder="12" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Text Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+            </group>
+            <group id="accessibility" translate="label" type="text" sortOrder="24" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Accessibility</label>
+                <field id="focus_outline_color" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Focus Outline Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="focus_shadow_color" translate="label" type="text" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Focus Shadow Color</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="disabled_background" translate="label" type="text" sortOrder="12" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Disabled Background</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="disabled_text" translate="label" type="text" sortOrder="13" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Disabled Text</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="disabled_border" translate="label" type="text" sortOrder="14" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Disabled Border</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+            </group>
+            <group id="layout" translate="label" type="text" sortOrder="25" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Layout</label>
+                <field id="page_background" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Page Background</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="content_background" translate="label" type="text" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Content Background</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="section_background" translate="label" type="text" sortOrder="12" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Section Background</label>
+                    <frontend_model>Kumar\GlobalConfig\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+                </field>
+                <field id="container_max_width" translate="label" type="text" sortOrder="13" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Container Max Width</label>
+                </field>
+                <field id="global_border_radius" translate="label" type="text" sortOrder="14" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Global Border Radius</label>
+                </field>
+            </group>
+</section>
+    </system>
+</config>

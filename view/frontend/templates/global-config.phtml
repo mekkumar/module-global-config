@@ -1,0 +1,41 @@
+<?php
+/** @var \Kumar\GlobalConfig\Block\GlobalConfig $block */
+if (!$block->isEnabled()) { return; }
+
+$settings = [
+    'general' => ['primary_color','secondary_color','text_color','border_color','page_background'],
+    'typography' => ['body_font_family','body_font_size','body_line_height','body_font_weight','body_color','heading_color','heading_font_weight'],
+    'header' => ['background_color','text_color','link_color','link_hover_color','border_color','icon_color'],
+    'navigation' => ['background_color','text_color','hover_background','hover_text','active_text','dropdown_background','dropdown_text'],
+    'footer' => ['background_color','text_color','heading_color','link_color','link_hover_color','border_color'],
+    'buttons' => ['primary_background','primary_text','primary_hover_background','primary_hover_text','secondary_background','secondary_text','secondary_hover_background','secondary_hover_text','border_color','border_radius','height','font_weight'],
+    'forms' => ['background','text_color','border_color','hover_border','focus_border','focus_shadow','placeholder_color','label_color','error_border','error_text'],
+    'messages' => ['success_background','success_text','error_background','error_text','warning_background','warning_text','notice_background','notice_text'],
+    'links' => ['color','hover_color','visited_color','underline'],
+    'product' => ['name_color','name_hover_color','card_background','card_border','card_hover_border','price_color','special_price_color','old_price_color','rating_color','swatch_border','selected_swatch_border','sale_badge_background','sale_badge_text','new_badge_background','new_badge_text'],
+    'breadcrumbs' => ['background','text_color','link_color','hover_color','current_color','separator_color'],
+    'pagination' => ['text_color','background','active_background','active_text','hover_background','hover_text','border_color'],
+    'modal' => ['background','title_color','text_color','border_color','close_icon_color','overlay_color','border_radius','width'],
+    'loader' => ['overlay_color','loader_color','text_color'],
+    'accessibility' => ['focus_outline_color','focus_shadow_color','disabled_background','disabled_text','disabled_border'],
+    'layout' => ['page_background','content_background','section_background','container_max_width','global_border_radius'],
+];
+$css = [];
+foreach ($settings as $group => $fields) {
+    foreach ($fields as $field) {
+        $value = $block->getConfig($group, $field);
+        if ($value === null || $value === '') {
+            continue;
+        }
+        $value = trim($value);
+        if (!preg_match('/^[#a-zA-Z0-9_ .,%()\-]+$/', $value)) {
+            continue;
+        }
+        $var = '--kumar-' . str_replace('_', '-', $group) . '-' . str_replace('_', '-', $field);
+        $css[] = $var . ':' . $value . ' !important';
+    }
+}
+?>
+<?php if ($css): ?>
+<style id="kumar-global-config-vars">:root{<?= /* @noEscape */ implode(';', $css) ?>;}</style>
+<?php endif; ?>
